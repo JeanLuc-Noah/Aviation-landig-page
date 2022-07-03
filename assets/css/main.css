@@ -1,0 +1,212 @@
+@font-face {
+  font-family: "AnekLigth";
+  src: url("../fonts/AnekMalayalam-VariableFont_wdth,wght.ttf");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "AnekBold";
+  src: url("../fonts/AnekMalayalam-VariableFont_wdth,wght.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "iceberg";
+  src: url("../fonts/Iceberg-Regular.ttf");
+}
+
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul li {
+  list-style: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0D0D0F;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0D0D0F), to(rgba(13, 13, 15, 0)));
+  background: linear-gradient(180deg, #0D0D0F 0%, rgba(13, 13, 15, 0) 100%);
+}
+
+header nav li {
+  display: inline-block;
+}
+
+header nav li a {
+  padding: 7px 20px;
+  text-decoration: none;
+  color: #fff;
+  font-family: "anekLigth";
+  font-size: 14px;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+header nav li a.logo {
+  font-family: "anekBold";
+  font-size: 22px;
+  position: relative;
+  bottom: -2px;
+}
+
+header nav li a.active {
+  font-family: "anekBold";
+}
+
+header nav li a:hover {
+  color: #ddd;
+}
+
+.group-presentation {
+  margin-top: 20px;
+  padding: 0 80px;
+}
+
+.group-presentation .title h1 {
+  font-size: 80px;
+  font-family: "iceberg";
+  font-style: normal;
+  letter-spacing: -3px;
+  background: linear-gradient(175.79deg, #f8c690 20.9%, rgba(255, 132, 0, 0) 96.57%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-text-emphasis-color: transparent;
+          text-emphasis-color: transparent;
+  text-transform: uppercase;
+}
+
+.group-presentation .content {
+  width: 500px;
+  height: auto;
+  color: #fff;
+  font-family: "anekLigth";
+  font-size: 15px;
+  text-align: justify;
+}
+
+.group-presentation .content .btn {
+  margin: 20px 0;
+}
+
+.group-presentation .content .btn button {
+  cursor: pointer;
+  border: 1px solid #fff;
+  padding: 8px 40px;
+  background: transparent;
+  color: #fff;
+  font-family: "anekLigth";
+  font-size: 17px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.group-presentation .content .btn button:hover {
+  color: #ddd;
+}
+
+.container-footer {
+  width: 700px;
+  height: 220px;
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  border: 1px solid #383838;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.container-footer .cart-bitmap {
+  position: absolute;
+  top: -30px;
+  left: 50px;
+}
+
+.container-footer .cart-bitmap .image {
+  width: 150px;
+  height: 150px;
+  float: left;
+  -webkit-box-shadow: 0 0 40px 0 rgba(255, 255, 255, 0.5);
+          box-shadow: 0 0 40px 0 rgba(255, 255, 255, 0.5);
+}
+
+.container-footer .cart-bitmap .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container-footer .cart-bitmap .title {
+  margin: 50px 170px;
+}
+
+.container-footer .cart-bitmap .title h1 {
+  color: #fff;
+  font-family: "iceberg";
+  font-weight: 400;
+  font-size: 2.5em;
+  text-shadow: 0 0 50px white;
+}
+
+.container-footer .cart-bitmap .content-text {
+  margin-top: 70px;
+  color: #fff;
+  font-family: "anekLigth";
+  font-size: 14px;
+  text-align: justify;
+  padding-right: 80px;
+}
+
+.container-footer .group-btn {
+  margin-top: 10px;
+}
+
+.container-footer .group-btn button {
+  margin-right: 20px;
+  border: none;
+  background: none;
+  outline: none;
+  color: #a5a5a5;
+  font-family: "anekLigth";
+}
+
+.container-footer .group-btn button.active {
+  color: #fff;
+}
+
+.container-bitmap {
+  position: absolute;
+  width: 1200px;
+  height: auto;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.container-bitmap img {
+  width: 100%;
+  height: 550px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=main.css.map */
